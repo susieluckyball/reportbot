@@ -3,7 +3,7 @@ package:
   version: 0.0.1
 
 source:
-  path: ./
+  git_url: https://github.com/susieluckyball/reportbot.git
 
 requirements:
   build:
@@ -13,6 +13,6 @@ requirements:
     - python
 
 build:
-  entry_point: 
-    - report_run = reportbot.cli.report_run 
+  entry_points: 
+    - report_run = reportbot.cli:report_run 
   script: python setup.py install

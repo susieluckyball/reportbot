@@ -17,5 +17,10 @@ setup(
       author_email='susieluckyball@gmail.com',
       url='https://github.com/susieluckyball/reportbot',
       packages=['reportbot', "reportbot.monitor_tools"],
+      entry_points={
+        'console_scripts': [
+          'report_run = reportbot.cli:report_run'
+        ]
+      },
       license='MIT'
 )
