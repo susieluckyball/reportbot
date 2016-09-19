@@ -1,7 +1,10 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+# try:
+#     from setuptools import setup, find_packages()
+# except ImportError:
+#     from distutils.core import setup
+
+from setuptools import setup, find_packages
+
 
 from os import path
 
@@ -16,7 +19,7 @@ setup(
       author='Susie Zhang',
       author_email='susieluckyball@gmail.com',
       url='https://github.com/susieluckyball/reportbot',
-      packages=['reportbot', "reportbot.monitor_tools"],
+      packages=find_packages(),
       entry_points={
         'console_scripts': [
           'report_run = reportbot.cli:report_run'
