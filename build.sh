@@ -4,4 +4,4 @@ mkdir -vp ${PREFIX}/bin;
 
 touch requirements.txt;
 
-${PYTHON} setup.py install || exit 1;
+${PYTHON} $RECIPE_DIR/setup.py install || exit 1;
