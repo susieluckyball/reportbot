@@ -14,5 +14,5 @@ requirements:
 
 build:
   entry_points: 
-    - report_run = reportbot.cli:report_run 
-  script: $PYTHON $RECIPE_DIR/setup.py install
+    - report_run = reportbot.cli:report_run
+  number: 0
